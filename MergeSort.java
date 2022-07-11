@@ -1,4 +1,4 @@
-package MergeSort_HeapSort;
+package sort;
 
 import java.lang.reflect.Array;
 import java.util.Random;
@@ -6,11 +6,16 @@ import java.util.Random;
 /**
  * merge_sort
  */
-public class merge_sort {
+public class MergeSort {
 
     public static void main(String[] args) {
         
-        PrintArr(ArrCreate(10));
+        int arr[] = ArrCreate(10);
+        PrintArr(arr);
+        System.out.println();
+        sortArr(arr);
+        PrintArr(arr);
+        System.out.println();
     }
 
     public static int[] ArrCreate(int a) {
@@ -24,7 +29,7 @@ public class merge_sort {
     public static void PrintArr(int[] array) {
         
         for (int i = 0; i < array.length; i++ ) {
-            System.out.println(array[i]);
+            System.out.print(array[i] + " ");
         }
     }
 
